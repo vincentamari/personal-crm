@@ -1,7 +1,7 @@
 ---
 name: Monica
 description: Personal relationship manager that helps you stay in touch with important people through gentle nudges, birthday reminders, and conversation tracking.
-version: 1.0.2
+version: 1.0.3
 tags:
   - relationships
   - networking
@@ -47,6 +47,18 @@ It's a relationship strengthener, not a task manager. This tool is most importan
 - User mentions a person → check if contact exists, offer to create/update
 - Birthday approaching → remind with context about the person
 - Create `~/contacts/` as workspace
+
+## Structure of the Important dates file
+
+- Store every important dates in the important dates markdown file.
+- The file is structured as is: MM-DD - Person name - Event (YYYY)
+- All dates are sorted by month then day, not year, so it's easier to scan and you can stop scanning once you reach the current date.
+
+## How to know if an important date is met
+
+- Scan the important-dates.md file.
+- Look for the current month and current day.
+- If any contact matches the MM-DD combination, inform user of the upcoming anniversary of the date.
 
 ## When User Mentions Someone
 
